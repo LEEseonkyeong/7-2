@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <!-- <script language="javascript"></script> -->
+    <script lang="java">
+        $(function () {
+            $("button").click(function () {
+                // $(".test").hide();
+
+                // $(".test").css("color", "red");
+                // $(".test").css("font-size", "50px");
+
+                // $(".test").css("color", "red").css("font-size", "50px");
+
+                $(".test").css({
+                    "color": "red",
+                    "font-size": "50px"
+                });
+
+                $("#test").css({
+                    "background-color": "#333",
+                    "color": "#fff",
+                    "font-size": "18px",
+                    "font-weight": "bold"
+                })
+
+            }) // botton click
+
+        }) // j close
+    </script>
+
+    <style type="text/css">
+        h1.test {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="test">header-1</h1>
+
+    <p class="test">this is paragraph</p>
+
+    <p id="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Commodi est libero consequatur eligendi fuga harum modi praesentium error <br>
+        enim maiores dignissimos voluptate architecto iste, maxime ipsam, tenetur <br>
+        excepturi? Explicabo, sit!
+    </p>
+
+    <button>click me</button>
+
+
+</body>
+
+</html>

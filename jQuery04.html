@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script lang="java">
+        $(function(){
+            $(".fadeIn").click(function(){
+                $(".img_view").fadeIn();
+            }) //fadeIn click
+
+            $(".fadeOut").click(function(){
+                $(".img_view").fadeOut();
+            }) //fadeOut click
+
+            $(".fadeToggle").click(function(){
+                $(".img_view").fadeToggle();
+            }) //fadeToggle click
+
+            $(".fadeTo").click(function(){
+                $(".img_view").fadeTo(1000, 0.15);
+            })
+        }) // jQuery end
+    </script>
+
+    <style type="text/css">
+
+
+    </style>
+</head>
+<body>
+    <h1>fade in, fade out, toggle, fadeto</h1>
+
+    <button class="fadeIn">fadeIn</button>
+    <button class="fadeOut">fadeOut</button>
+    <button class="fadeToggle">fadeToggle</button>
+    <button class="fadeTo">fadeTo</button>
+
+    <p class="img_view">
+        <img src="img/003.jpg" alt="car">
+    </p>
+</body>
+</html>
